@@ -24,3 +24,38 @@ This project demonstrates how to scrape data from a real website using Python. S
 ```bash
 git clone https://github.com/yourusername/web-scraping-python.git
 cd web-scraping-python
+```
+2. Install the required Python packages:
+
+```bash
+pip install beautifulsoup4 requests pandas
+```
+
+## Usage
+
+1. Run the Python script to scrape the data and save it to a CSV file:
+
+```bash
+python scraping_script.py
+```
+
+2. The script will fetch the list of the largest companies in India from the specified Wikipedia page and store the data in 'companies.csv'.
+
+## Script Explanation
+The 'scraping_script.py' script performs the following steps:
+
+1. Fetch the Webpage Content: Uses the 'requests' library to fetch the content of the Wikipedia page.
+2. Parse the HTML: Uses BeautifulSoup to parse the HTML content of the page.
+3. Extract Table Data: Finds the specific table containing the list of companies and extracts the data.
+4. Store Data in CSV: Uses 'pandas' to store the extracted data in a CSV file.
+
+
+## Learning Outcome
+This project is an exercise in web scraping, demonstrating how to:
+
+1. Fetch webpage content using 'requests'.
+2. Parse HTML content using BeautifulSoup.
+3. Extract specific data from an HTML table.
+4. Store extracted data in a structured format using 'pandas'.
+
+
